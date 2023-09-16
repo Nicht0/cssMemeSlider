@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+
+main {
+    max-width: 96%;
+    height: 100%;
+    background: gray;
+    margin: 0 auto;
+}
+
+.container {
+    padding-top: 40px;
+}
+
+.slider {
+    max-width: 90%;
+    background: red;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+.img-wrapper {
+    display: flex;
+}
