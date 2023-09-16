@@ -15,11 +15,12 @@ main {
 
 .slider {
     max-width: 90%;
-    background: red;
     overflow: hidden;
     margin: 0px auto;
+    background: red;
 }
 
 .img-wrapper {
     display: flex;
+    background: blue;
 }
