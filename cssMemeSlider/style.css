@@ -62,9 +62,7 @@ input[name="radio"] {
     display: flex;
     align-items: start;
     transition: all .5s ease;
-    /* flex-direction: column; */
     order: 1;
-    /* width: 30%; */
 }
 
 .text {
