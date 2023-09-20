@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #25282A;
+}
+
+input[name="radio"] {
+    display: none;
+}
+
+.slider-wrapper {
+    max-width: 96%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background: gray;
+    padding: 30px;
+}
+
+.image-wrapper {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    /* border: 2px solid #fff; */
+    overflow: hidden;
+    /* border-radius: 15px; */
+    margin: 0 auto;
+}
+
+
+.slider-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    transition: all .5s ease;
+}
+
+.slider-image img {
+    width: 50%;
+    height: 100%;
+}
+
+.controls-wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.text-wrapper {
+    width: 50%;
+    overflow: hidden;
+}
+
+.text-container {
+    display: flex;
+    align-items: start;
+    transition: all .5s ease;
+    order: 1;
+}
+
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 18px;
+    flex-shrink: 0;
+    /* opacity: 0; */
+    width: 100%;
+}
+
+.controls-container {
+    display: flex;
+    order: 2;
+}
+
+.controls-wrapper label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+.dot {
+
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #6EA3CA;
+    transition: all .5s ease;
+}
+
+.dot:hover {
+    opacity: .4;
+}
+
+.dot:active {
+    color: #fff;
+}
+
+#pisos:checked ~ .image-wrapper {
+    margin-left: 0;
+}
+
+#four:checked ~ .image-wrapper {
+    margin-left: -100%;
+}
+
+#smurf:checked ~ .image-wrapper {
+    margin-left: -200%;
+
+}
+
+#dude:checked ~ .image-wrapper {
+    margin-left: -300%;
+
+}
+
+#pisos:checked ~ .text-wrapper .text:nth-of-type(1),
+#four:checked ~ .text-wrapper .text:nth-of-type(2),
+#smurf:checked ~ .text-wrapper .text:nth-of-type(3),
+#dude:checked ~ .text-wrapper .text:nth-of-type(4) {
+    opacity: 1;
+}
+
+#pisos:checked ~ .controls-wrapper .text-container {
+    transform: translateX(0);
+}
+
+#four:checked ~ .controls-wrapper .text-container {
+    transform: translateX(-50%);
+}
+
+#smurf:checked ~ .controls-wrapper .text-container {
+    transform: translateX(-100%);
+}
+
+#dude:checked ~ .controls-wrapper .text-container {
+    transform: translateX(-150%);
+}

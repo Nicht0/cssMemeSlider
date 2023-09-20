@@ -3,28 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>memSlider</title>
-    <link rel="stylesheet" href="style.css">
+    <title>cssMemeSlider</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
 </head>
 <body>
-    <main>
-        <div class="container">
-            <div class="slider">
-                <div class="img-wrapper">
-                    <img src="./assets/dude.png" alt="dude">
-                    <img src="./assets/писос.png" alt="pisos">
-                    <img src="./assets/шалушай.png" alt="smurfCat">
-                    <img src="./assets/четыре.png" alt="four">
-                </div>
-            </div>
-            <div class="dot-wrapper">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
+    <div class="slider-wrapper">
+        <main>
+        <div class="slides">
+            <input type="radio" name="radio" id="pisos" checked>
+            <input type="radio" name="radio" id="four">
+            <input type="radio" name="radio" id="smurf">
+            <input type="radio" name="radio" id="dude">
+            <div class="image-wrapper">
+                <div class="slider-image current"><img src="./assets/писос.png" alt="pisos"></div>
+                <div class="slider-image"><img src="./assets/четыре.png" alt="four"></div>
+                <div class="slider-image"><img src="./assets/шалушай.png" alt="smurf"></div>
+                <div class="slider-image"><img src="./assets/dude.png" alt="dude"></div>
             </div>
         </div>
+        
+        <div class="controls-wrapper">
+            <div class="text-wrapper">
+                <div class="text-container">
+                    <p class="text">Писос</p>
+                    <p class="text">четыре</p>
+                    <p class="text">Шайлушай</p>
+                    <p class="text">It's wednesday, dude</p>
+                </div>
+            </div>
+            <div class="controls-container">
+                <label for="pisos"><div class="dot"></div></label>
+                <label for="four"><div class="dot"></div></label>
+                <label for="smurf"><div class="dot"></div></label>
+                <label for="dude"><div class="dot"></div></label>
+            </div>
+
+        </div>
     </main>
-    <script src="index.js"></script>
+    </div>
 </body>
 </html>
